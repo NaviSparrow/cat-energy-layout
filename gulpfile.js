@@ -1,9 +1,9 @@
 import gulp from "gulp";
-import browser from "browser-sync";
 import plumber from "gulp-plumber";
 import sass from "gulp-dart-sass";
 import postcss from "gulp-postcss";
 import autoprefixer from "autoprefixer";
+import browser from "browser-sync";
 
 //const
 export const sassPath = './source/styles/style.scss';
