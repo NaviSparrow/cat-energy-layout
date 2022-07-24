@@ -1,0 +1,41 @@
+@use "source/styles/global/variables" as var;
+@use "source/styles/global/mixins" as mixin;
+
+.navigation {
+  width: 100%;
+  display: flex;
+  position: relative;
+
+  &--opened .navigation__list {
+    display: flex;
+  }
+}
+
+.navigation__list {
+  @include mixin.reset-list();
+  display: none;
+  width: 100%;
+  position: absolute;
+  flex-direction: column;
+  background-color: var.$basic-white;
+}
+
+.navigation__item {
+  display: flex;
+  position: relative;
+  left: -20px;
+  min-width: 100vw;
+  min-height: 66px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+.navigation__link {
+  font-family: "Oswald Medium", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: var.$basic-black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
