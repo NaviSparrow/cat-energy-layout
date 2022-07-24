@@ -1,0 +1,54 @@
+@use "source/styles/global/variables" as var;
+
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+}
+
+.main-header__logo {
+  margin-top: 10px;
+  margin-bottom: 17px;
+}
+
+.main-header__menu-toggle {
+  position: relative;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  cursor: pointer;
+  background-color: var.$basic-white;
+  border: none;
+
+  &--closed::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    top: 0;
+    left: 0;
+    background-color: var.$basic-black;
+    box-shadow: 0 7px 0 0 var.$basic-black, 0 14px 0 0 var.$basic-black;
+  }
+
+  &--opened::before,
+  &--opened::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0.5px;
+    background-color: var.$basic-black;
+  }
+
+  &--opened::before {
+    transform: rotate(45deg);
+  }
+
+  &--opened::after {
+    transform: rotate(-45deg);
+  }
+}
