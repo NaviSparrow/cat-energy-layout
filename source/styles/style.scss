@@ -1,0 +1,17 @@
+//import mixins
+@use "global/mixins";
+
+//import fonts
+@use "global/fonts";
+
+//import global styles
+@use "global/global";
+
+//import page styles
+@use "blocks/page/page";
+
+//import main-header styles
+@use "blocks/main-header/main-header";
+
+//import navigation styles
+@use "blocks/navigation/navigation";
