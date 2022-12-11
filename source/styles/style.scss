@@ -1,0 +1,26 @@
+//import mixins
+@use "global/mixins";
+
+//import fonts
+@use "global/fonts";
+
+//import global styles
+@use "global/global";
+
+//import page styles
+@use "blocks/page/page";
+
+//import main-header styles
+@use "blocks/main-header/main-header";
+
+//import navigation styles
+@use "blocks/navigation/navigation";
+
+//import index-content styles
+@use "blocks/index-content/index-content";
+
+//import page-title styles
+@use "blocks/page-title/page-title";
+
+//import product-presentation styles
+@use "blocks/product-presentation/product-presentation";

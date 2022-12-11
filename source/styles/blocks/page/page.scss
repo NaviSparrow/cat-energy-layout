@@ -1,0 +1,22 @@
+@use "source/styles/global/variables" as var;
+
+.page {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: var.$secondary-dark-grey;
+}
+
+.page__body {
+  min-width: 320px;
+  height: 100%;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.page__container {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+}
