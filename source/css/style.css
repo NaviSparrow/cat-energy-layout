@@ -5,6 +5,7 @@
   font-display: swap;
   src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
 }
+
 @font-face {
   font-family: "Oswald Medium";
   font-weight: normal;
@@ -12,6 +13,7 @@
   font-display: swap;
   src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
 }
+
 *,
 *::before,
 *::after {
@@ -108,11 +110,14 @@ img {
 
 .navigation {
   width: 100%;
-  display: flex;
-  position: relative;
 }
 .navigation--opened .navigation__list {
   display: flex;
+}
+
+.navigation__wrapper {
+  display: flex;
+  position: relative;
 }
 
 .navigation__list {
@@ -124,6 +129,7 @@ img {
   position: absolute;
   flex-direction: column;
   background-color: #ffffff;
+  z-index: 10;
 }
 
 .navigation__item {
@@ -144,5 +150,63 @@ img {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.index-content__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.product-presentation__wrapper {
+  position: relative;
+  z-index: 1;
+  padding-top: 27px;
+}
+
+.product-presentation__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 320px;
+  height: 302px;
+  background-image: url("../images/index/cat-background-mobile.png");
+  background-size: cover;
+  z-index: -2;
+}
+
+.product-presentation__wrapper::after {
+  content: "";
+  position: absolute;
+  min-width: 100vw;
+  min-height: 66%;
+  top: 0;
+  left: -20px;
+  background-color: rgba(104, 183, 56, 0.85);
+  z-index: -1;
+}
+
+.product-presentation__title {
+  margin-bottom: 25px;
+}
+
+.product-presentation__slogan {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 29px;
 }
 /*# sourceMappingURL=style.css.map */
