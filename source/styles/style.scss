@@ -15,3 +15,12 @@
 
 //import navigation styles
 @use "blocks/navigation/navigation";
+
+//import index-content styles
+@use "blocks/index-content/index-content";
+
+//import page-title styles
+@use "blocks/page-title/page-title";
+
+//import product-presentation styles
+@use "blocks/product-presentation/product-presentation";

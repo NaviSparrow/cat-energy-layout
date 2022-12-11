@@ -1,0 +1,44 @@
+@use "source/styles/global/variables" as var;
+
+.product-presentation__wrapper {
+  position: relative;
+  z-index: 1;
+  padding-top: 27px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 320px;
+    height: 302px;
+    background-image: url("/images/index/cat-background-mobile.png");
+    background-size: cover;
+    z-index: -2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    min-width: 100vw;
+    min-height: 66%;
+    top: 0;
+    left: -20px;
+    background-color: rgba(104, 183, 56, 0.85);
+    z-index: -1;
+  }
+}
+
+.product-presentation__title {
+  margin-bottom: 25px;
+}
+
+.product-presentation__slogan {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: var.$basic-white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
