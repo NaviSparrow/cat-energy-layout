@@ -4,6 +4,7 @@
   position: relative;
   z-index: 1;
   padding-top: 27px;
+  margin-bottom: 20px;
 
   &::before {
     content: "";
@@ -21,7 +22,7 @@
     content: "";
     position: absolute;
     min-width: 100vw;
-    min-height: 66%;
+    min-height: 63%;
     top: 0;
     left: -20px;
     background-color: rgba(104, 183, 56, 0.85);
@@ -31,6 +32,7 @@
 
 .product-presentation__title {
   margin-bottom: 25px;
+  font-weight: 400;
 }
 
 .product-presentation__slogan {
@@ -41,4 +43,8 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 29px;
+}
+
+.product-presentation__button {
+  padding: 7px 14px;
 }

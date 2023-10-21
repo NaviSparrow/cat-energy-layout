@@ -1,9 +1,9 @@
 @use "source/styles/global/variables" as var;
+@use "source/styles/global/mixins" as mixin;
 
 .page-title {
-  margin: 0;
-  padding: 0;
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  @include mixin.reset-h;
+  font-family: var.$oswald-regular;
   font-size: 36px;
   line-height: 36px;
   color: var.$basic-white;

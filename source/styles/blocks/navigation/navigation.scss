@@ -35,7 +35,7 @@
 }
 
 .navigation__link {
-  font-family: "Oswald Medium", "Arial", sans-serif;
+  font-family: var.$oswald-medium;
   font-size: 20px;
   line-height: 20px;
   color: var.$basic-black;
