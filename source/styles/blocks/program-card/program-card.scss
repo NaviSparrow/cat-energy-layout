@@ -1,0 +1,62 @@
+@use "source/styles/global/variables" as var;
+@use "source/styles/global/mixins" as mixin;
+
+.program-card {
+  position: relative;
+  max-width: 280px;
+  padding: 21px 33px 18px 20px;
+  background-color: var.$basic-grey;
+}
+
+.program-card__title {
+  @include mixin.reset-h;
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  font-family: var.$oswald-regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  color: var.$basic-black;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+
+}
+
+.program-card__title::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 53px;
+  background-image: url("/images/svg/cat-pro-mobile.svg");
+}
+
+.program-card__description {
+  margin: 0;
+  color: var.$secondary-dark-grey;
+}
+
+.program-card__description::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 1px;
+  background-color: #D9D9D9;
+  margin-top: 23px;
+}
+
+.program-card__button {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: var.$basic-black;
+  justify-content: start;
+  gap: 15px;
+}
+
+.program-card__filler {
+  background-color: var.$basic-white;
+  padding: 20px 26px;
+  margin-left: -20px;
+  margin-right: -34px;
+}

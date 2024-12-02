@@ -3,3 +3,8 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin reset-h() {
+  margin: 0;
+  padding: 0;
+}

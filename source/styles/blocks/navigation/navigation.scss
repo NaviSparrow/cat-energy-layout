@@ -12,12 +12,13 @@
 .navigation__wrapper {
   display: flex;
   position: relative;
+  margin-left: -20px;
 }
 
 .navigation__list {
   @include mixin.reset-list();
   display: none;
-  width: 100%;
+  min-width: 100vw;
   position: absolute;
   flex-direction: column;
   background-color: var.$basic-white;
@@ -26,8 +27,6 @@
 
 .navigation__item {
   display: flex;
-  position: relative;
-  left: -20px;
   min-width: 100vw;
   min-height: 66px;
   justify-content: center;
@@ -36,7 +35,7 @@
 }
 
 .navigation__link {
-  font-family: "Oswald Medium", "Arial", sans-serif;
+  font-family: var.$oswald-medium;
   font-size: 20px;
   line-height: 20px;
   color: var.$basic-black;
